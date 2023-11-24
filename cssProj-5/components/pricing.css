@@ -1,0 +1,93 @@
+/* pricing */
+
+.pricing {
+  margin-top: 5rem;
+}
+
+.pricing__title {
+  font-size: 0.75rem;
+  margin-bottom: 1rem;
+  font-family: "Source Code Pro", monospace;
+}
+
+.pricing__box {
+  background: #000;
+  color: white;
+  margin-top: 1rem;
+  padding: 2rem;
+}
+
+.pricing__margin0 {
+  margin: 0;
+}
+
+.pricing__box-title {
+  font-size: 1.15rem;
+}
+
+.pricing__sub-title {
+  margin-bottom: 1rem;
+  font-size: 0.75rem;
+}
+
+.pricing__box-description {
+  margin-bottom: 1rem;
+  font-size: 0.75rem;
+  color: #ccc;
+  font-family: "Source Code Pro", monospace;
+}
+
+span {
+  text-transform: uppercase;
+}
+
+/* pre-defined media-queries */
+
+/* xs */
+@media (min-width: 475px) {
+  .pricing__title {
+    font-size: 0.85rem;
+  }
+
+  .pricing__box-title {
+    font-size: 1.25rem;
+  }
+  .pricing__sub-title,
+  .pricing__box-description,
+  .pricing__btn {
+    font-size: 0.85rem;
+  }
+}
+
+/* @media (min-width: 640px) {} */
+/* @media (min-width: 768px) {} */
+
+/* lar */
+@media (min-width: 1024px) {
+  .pricing__grid-container {
+    display: grid;
+    grid-template-areas:
+      "css css css jav"
+      "rea rea nex nex";
+    gap: 1rem;
+  }
+
+  .pricing__box {
+    margin: 0;
+  }
+
+  .pricing__box-1 {
+    grid-area: css;
+  }
+  .pricing__box-2 {
+    grid-area: jav;
+  }
+  .pricing__box-3 {
+    grid-area: rea;
+  }
+  .pricing__box-4 {
+    grid-area: nex;
+  }
+}
+/* @media (min-width: 1280px) {} */
+/* @media (min-width: 1536px) {} */
